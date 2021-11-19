@@ -86,7 +86,7 @@
     ((null? s-inf) '())
     ((pair? s-inf) 
      (cons (car s-inf)
-       (take-inf (and n (sub1 n))
+       (take-inf (and n (- n 1))
          (cdr s-inf))))
     (else (take-inf n (s-inf)))))
 
